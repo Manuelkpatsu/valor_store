@@ -2,8 +2,8 @@ class ImageStrings {
   ImageStrings._();
 
   // App Logos
-  static const String darkAppLogo = 'assets/logos/t-store-splash-logo-black.png';
-  static const String lightAppLogo = 'assets/logos/t-store-splash-logo-white.png';
+  static const String darkAppLogo = 'assets/logos/logo-black.png';
+  static const String lightAppLogo = 'assets/logos/logo-white.png';
 
   // Social Logos
   static const String google = "assets/logos/google-icon.png";

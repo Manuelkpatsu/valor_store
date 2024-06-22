@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:valor_store/commons/styles/spacing_styles.dart';
 import 'package:valor_store/commons/widgets/form_divider.dart';
 import 'package:valor_store/commons/widgets/social_button.dart';
+import 'package:valor_store/features/authentication/screens/sign_up/sign_up_screen.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
 import 'package:valor_store/utils/constants/sizes.dart';
 import 'package:valor_store/utils/constants/text_strings.dart';
@@ -61,7 +62,7 @@ class LoginScreen extends StatelessWidget {
                     const SizedBox(height: AppSizes.spaceBtwSections),
                     SignInButton(onPressed: () {}),
                     const SizedBox(height: AppSizes.spaceBtwItems),
-                    CreateAccountButton(onPressed: () {}),
+                    CreateAccountButton(onPressed: () => Get.to(const SignUpScreen())),
                   ],
                 ),
               ),

@@ -27,12 +27,13 @@ class TextStrings {
   static const String createAccount = "Create Account";
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
-  static const String iAgreeTo = "I agree to";
+  static const String iAgreeTo = "I agree to ";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verification code";
   static const String resendEmail = "Resend Email";
   static const String resendEmailIn = "Resend email in";
+  static const String and = " and ";
 
   // Authentication Headings Text
   static const String loginTitle = "Welcome back,";

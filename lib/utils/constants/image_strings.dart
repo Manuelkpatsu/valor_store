@@ -6,8 +6,8 @@ class ImageStrings {
   static const String lightAppLogo = 'assets/logos/logo-white.png';
 
   // Social Logos
-  static const String google = "assets/logos/google-icon.png";
-  static const String facebook = "assets/logos/facebook-icon.png";
+  static const String google = "assets/logos/google.png";
+  static const String facebook = "assets/logos/facebook.png";
 
   // Onboarding images
   static const String onboardingImage1 = "assets/images/onboarding_images/sammy-line-searching.gif";

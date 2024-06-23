@@ -53,6 +53,7 @@ class TextStrings {
   static const String yourAccountCreatedTitle = "Your account successfully created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to your ultimate shopping destination. Your account is created, unleash the joy of seamless online shopping.";
+  static const String continueText = "Continue";
 
   // Home
   static const String homeAppBarTitle = "Good day for shopping";

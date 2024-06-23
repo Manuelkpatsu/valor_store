@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:valor_store/commons/widgets/form_divider.dart';
 import 'package:valor_store/commons/widgets/social_button.dart';
+import 'package:valor_store/features/authentication/screens/verify_email/verify_email_screen.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
 import 'package:valor_store/utils/constants/sizes.dart';
 import 'package:valor_store/utils/constants/text_strings.dart';
@@ -96,7 +97,7 @@ class SignUpScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: AppSizes.spaceBtwSections),
-                    SignUpButton(onPressed: () {}),
+                    SignUpButton(onPressed: () => Get.to(const VerifyEmailScreen())),
                   ],
                 ),
               ),

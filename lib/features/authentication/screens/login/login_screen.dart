@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:valor_store/commons/styles/spacing_styles.dart';
 import 'package:valor_store/commons/widgets/form_divider.dart';
 import 'package:valor_store/commons/widgets/social_button.dart';
+import 'package:valor_store/features/authentication/screens/forgot_password/forgot_password_screen.dart';
 import 'package:valor_store/features/authentication/screens/sign_up/sign_up_screen.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
 import 'package:valor_store/utils/constants/sizes.dart';
@@ -56,7 +57,9 @@ class LoginScreen extends StatelessWidget {
                         Checkbox(value: true, onChanged: (value) {}),
                         const Text(TextStrings.rememberMe),
                         const Spacer(),
-                        ForgetPasswordButton(onPressed: () {}),
+                        ForgetPasswordButton(
+                          onPressed: () => Get.to(() => const ForgotPasswordScreen()),
+                        ),
                       ],
                     ),
                     const SizedBox(height: AppSizes.spaceBtwSections),

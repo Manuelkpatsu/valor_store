@@ -35,6 +35,7 @@ class TextStrings {
   static const String resendEmailIn = "Resend email in";
   static const String and = " and ";
   static const String submit = "Submit";
+  static const String done = "Done";
 
   // Authentication Headings Text
   static const String loginTitle = "Welcome back,";
@@ -58,6 +59,7 @@ class TextStrings {
   static const String forgotPasswordTitle = "Forget Password";
   static const String forgotPasswordSubTitle =
       "Don't worry sometimes people can forget too. Enter your email and we will send you a password reset link.";
+  static const String myEmailAddress = "emmaahuno@gmail.com";
 
   // Home
   static const String homeAppBarTitle = "Good day for shopping";

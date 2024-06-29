@@ -34,7 +34,7 @@ class SuccessScreen extends StatelessWidget {
             const SizedBox(height: AppSizes.spaceBtwItems),
             Text(
               subTitle,
-              style: Theme.of(context).textTheme.labelLarge,
+              style: Theme.of(context).textTheme.labelMedium,
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: AppSizes.spaceBtwSections),

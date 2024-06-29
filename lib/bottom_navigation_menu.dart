@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:valor_store/features/authentication/controllers/bottom_navigation_menu/navigation_controller.dart';
+import 'package:valor_store/features/shop/controllers/bottom_navigation_menu/navigation_controller.dart';
 import 'package:valor_store/utils/constants/colors.dart';
 import 'package:valor_store/utils/constants/text_strings.dart';
 import 'package:valor_store/utils/helpers/helper_functions.dart';

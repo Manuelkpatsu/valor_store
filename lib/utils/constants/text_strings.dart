@@ -64,4 +64,10 @@ class TextStrings {
   // Home
   static const String homeAppBarTitle = "Good day for shopping";
   static const String homeAppBarSubTitle = "Taimoor Sikander";
+
+  // Bottom Navigation Bar
+  static const String home = "Home";
+  static const String store = "Store";
+  static const String wishlist = "Wishlist";
+  static const String profile = "Profile";
 }

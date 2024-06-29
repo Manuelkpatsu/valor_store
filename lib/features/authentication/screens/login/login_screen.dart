@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:valor_store/bottom_navigation_menu.dart';
 import 'package:valor_store/commons/styles/spacing_styles.dart';
 import 'package:valor_store/commons/widgets/form_divider.dart';
 import 'package:valor_store/commons/widgets/social_button.dart';
@@ -63,9 +64,9 @@ class LoginScreen extends StatelessWidget {
                       ],
                     ),
                     const SizedBox(height: AppSizes.spaceBtwSections),
-                    SignInButton(onPressed: () {}),
+                    SignInButton(onPressed: () => Get.offAll(() => const BottomNavigationMenu())),
                     const SizedBox(height: AppSizes.spaceBtwItems),
-                    CreateAccountButton(onPressed: () => Get.to(const SignUpScreen())),
+                    CreateAccountButton(onPressed: () => Get.to(() => const SignUpScreen())),
                   ],
                 ),
               ),

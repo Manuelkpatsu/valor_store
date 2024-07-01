@@ -12,6 +12,7 @@ import 'package:valor_store/utils/constants/text_strings.dart';
 
 import 'widgets/home_sub_title_text.dart';
 import 'widgets/home_title_text.dart';
+import 'widgets/promo_slider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -71,6 +72,10 @@ class HomeScreen extends StatelessWidget {
                   )
                 ],
               ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(AppSizes.defaultSpace),
+              child: PromoSlider(),
             ),
           ],
         ),

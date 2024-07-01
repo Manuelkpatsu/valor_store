@@ -65,10 +65,15 @@ class TextStrings {
   static const String homeAppBarTitle = "Good day for shopping";
   static const String homeAppBarSubTitle = "Manuel Ahuno";
   static const String searchInStore = "Search in store";
+  static const String popularCategories = "Popular Categories";
+  static const String viewAll = "View all";
 
   // Bottom Navigation Bar
   static const String home = "Home";
   static const String store = "Store";
   static const String wishlist = "Wishlist";
   static const String profile = "Profile";
+
+  // Categories
+  static const String shoes = "Shoes";
 }

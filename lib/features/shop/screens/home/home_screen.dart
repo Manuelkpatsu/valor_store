@@ -3,7 +3,10 @@ import 'package:valor_store/commons/widgets/cart_counter_button.dart';
 import 'package:valor_store/commons/widgets/custom_app_bar.dart';
 import 'package:valor_store/commons/widgets/primary_header_container.dart';
 import 'package:valor_store/commons/widgets/search_container.dart';
+import 'package:valor_store/commons/widgets/section_heading.dart';
+import 'package:valor_store/commons/widgets/vertical_image_text.dart';
 import 'package:valor_store/utils/constants/colors.dart';
+import 'package:valor_store/utils/constants/image_strings.dart';
 import 'package:valor_store/utils/constants/sizes.dart';
 import 'package:valor_store/utils/constants/text_strings.dart';
 
@@ -34,6 +37,38 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: AppSizes.spaceBtwSections),
                   const SearchContainer(text: TextStrings.searchInStore),
                   const SizedBox(height: AppSizes.spaceBtwSections),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Padding(
+                        padding: EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+                        child: SectionHeading(
+                          title: TextStrings.popularCategories,
+                          showActionButton: false,
+                          textColor: AppColors.white,
+                        ),
+                      ),
+                      const SizedBox(height: AppSizes.spaceBtwItems),
+                      SizedBox(
+                        height: 80,
+                        child: ListView.separated(
+                          separatorBuilder: (_, __) => const SizedBox(
+                            width: AppSizes.spaceBtwItems,
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 6,
+                          itemBuilder: (ctx, index) {
+                            return VerticalImageText(
+                              image: ImageStrings.shoeIcon,
+                              title: TextStrings.shoes,
+                              onTap: () {},
+                            );
+                          },
+                        ),
+                      ),
+                    ],
+                  )
                 ],
               ),
             ),

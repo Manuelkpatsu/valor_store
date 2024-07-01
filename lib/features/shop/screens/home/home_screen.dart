@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: AppSizes.spaceBtwSections),
-                  const SearchContainer(text: TextStrings.searchInStore),
+                  SearchContainer(text: TextStrings.searchInStore, onTap: () {}),
                   const SizedBox(height: AppSizes.spaceBtwSections),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

@@ -64,27 +64,31 @@ class ProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(height: AppSizes.spaceBtwItems / 2),
-            Padding(
-              padding: const EdgeInsets.only(left: AppSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: AppSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const ProductTitleText(title: TextStrings.product1, smallSize: true),
-                  const SizedBox(height: AppSizes.spaceBtwItems / 2),
-                  const Row(
+                  ProductTitleText(title: TextStrings.product1, smallSize: true),
+                  SizedBox(height: AppSizes.spaceBtwItems / 2),
+                  Row(
                     children: [
                       BrandText(title: TextStrings.nike),
                       SizedBox(width: AppSizes.xs),
                       Icon(Iconsax.verify5, color: AppColors.primary, size: AppSizes.iconXs),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const ProductPriceText(price: 35.5, isLarge: true),
-                      ProductCartButton(onTap: () {}, cartQuantity: 0),
-                    ],
-                  ),
+                ],
+              ),
+            ),
+            const Spacer(),
+            Padding(
+              padding: const EdgeInsets.only(left: AppSizes.sm),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const ProductPriceText(price: 35.5, isLarge: true),
+                  ProductCartButton(onTap: () {}, cartQuantity: 0),
                 ],
               ),
             ),

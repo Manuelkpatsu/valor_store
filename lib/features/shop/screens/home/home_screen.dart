@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:valor_store/commons/widgets/cart_counter_button.dart';
 import 'package:valor_store/commons/widgets/custom_app_bar.dart';
+import 'package:valor_store/commons/widgets/grid_layout.dart';
+import 'package:valor_store/commons/widgets/poducts/product_cards/product_card_vertical.dart';
 import 'package:valor_store/commons/widgets/primary_header_container.dart';
 import 'package:valor_store/commons/widgets/search_container.dart';
 import 'package:valor_store/commons/widgets/section_heading.dart';
@@ -77,6 +79,22 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.all(AppSizes.defaultSpace),
               child: PromoSlider(),
             ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+              child: SectionHeading(
+                title: TextStrings.popularProducts,
+                showActionButton: true,
+                textColor: AppColors.black,
+                onPressed: () {},
+              ),
+            ),
+            const SizedBox(height: AppSizes.xs),
+            GridLayout(
+              itemCount: 4,
+              padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace, vertical: 0),
+              itemBuilder: (ctx, index) => const ProductCardVertical(),
+            ),
+            const SizedBox(height: AppSizes.defaultSpace),
           ],
         ),
       ),

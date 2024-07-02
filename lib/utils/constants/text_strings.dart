@@ -66,6 +66,7 @@ class TextStrings {
   static const String homeAppBarSubTitle = "Manuel Ahuno";
   static const String searchInStore = "Search in store";
   static const String popularCategories = "Popular Categories";
+  static const String popularProducts = "Popular Products";
   static const String viewAll = "View all";
 
   // Bottom Navigation Bar
@@ -76,4 +77,10 @@ class TextStrings {
 
   // Categories
   static const String shoes = "Shoes";
+
+  // Products
+  static const String product1 = "Green Nike Air Shoes";
+
+  // Brands
+  static const String nike = "Nike";
 }

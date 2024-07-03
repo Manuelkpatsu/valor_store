@@ -84,7 +84,6 @@ class HomeScreen extends StatelessWidget {
               child: SectionHeading(
                 title: TextStrings.popularProducts,
                 showActionButton: true,
-                textColor: AppColors.black,
                 onPressed: () {},
               ),
             ),

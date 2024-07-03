@@ -6,6 +6,8 @@ class GridLayout extends StatelessWidget {
   final double? mainAxisExtent;
   final EdgeInsets? padding;
   final Widget? Function(BuildContext, int) itemBuilder;
+  final bool shrinkWrap;
+  final ScrollPhysics physics;
 
   const GridLayout({
     super.key,
@@ -13,6 +15,8 @@ class GridLayout extends StatelessWidget {
     this.padding,
     this.mainAxisExtent = 288,
     required this.itemBuilder,
+    this.shrinkWrap = true,
+    this.physics = const NeverScrollableScrollPhysics(),
   });
 
   @override
@@ -20,8 +24,8 @@ class GridLayout extends StatelessWidget {
     return GridView.builder(
       padding: padding,
       itemCount: itemCount,
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+      shrinkWrap: shrinkWrap,
+      physics: physics,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         mainAxisSpacing: AppSizes.gridViewSpacing,

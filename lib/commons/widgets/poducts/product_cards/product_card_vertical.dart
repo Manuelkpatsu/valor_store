@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:valor_store/commons/widgets/brand_with_verified_icon.dart';
 import 'package:valor_store/commons/widgets/circular_container.dart';
 import 'package:valor_store/commons/widgets/circular_icon_button.dart';
 import 'package:valor_store/commons/widgets/poducts/product_cards/widget/product_title_text.dart';
@@ -11,7 +12,6 @@ import 'package:valor_store/utils/constants/sizes.dart';
 import 'package:valor_store/utils/constants/text_strings.dart';
 import 'package:valor_store/utils/helpers/helper_functions.dart';
 
-import 'widget/brand_text.dart';
 import 'widget/product_cart_button.dart';
 import 'widget/product_discount.dart';
 import 'widget/product_price_text.dart';
@@ -71,13 +71,7 @@ class ProductCardVertical extends StatelessWidget {
                 children: [
                   ProductTitleText(title: TextStrings.product1, smallSize: true),
                   SizedBox(height: AppSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      BrandText(title: TextStrings.nike),
-                      SizedBox(width: AppSizes.xs),
-                      Icon(Iconsax.verify5, color: AppColors.primary, size: AppSizes.iconXs),
-                    ],
-                  ),
+                  BrandWithVerifiedIcon(title: TextStrings.nike),
                 ],
               ),
             ),

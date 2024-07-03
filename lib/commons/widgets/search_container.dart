@@ -10,6 +10,7 @@ class SearchContainer extends StatelessWidget {
   final IconData iconData;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsets padding;
 
   const SearchContainer({
     super.key,
@@ -18,6 +19,7 @@ class SearchContainer extends StatelessWidget {
     this.showBackground = true,
     this.showBorder = true,
     required this.onTap,
+    this.padding = const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
   });
 
   @override
@@ -25,7 +27,7 @@ class SearchContainer extends StatelessWidget {
     final dark = HelperFunctions.isDarkMode(context);
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: AppSizes.defaultSpace),
+      padding: padding,
       child: GestureDetector(
         onTap: onTap,
         child: Container(

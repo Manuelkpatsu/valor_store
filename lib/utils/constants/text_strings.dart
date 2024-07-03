@@ -69,6 +69,16 @@ class TextStrings {
   static const String popularProducts = "Popular Products";
   static const String viewAll = "View all";
 
+  static String numberOfProducts(int products) {
+    if (products == 1) {
+      return "$products product";
+    } else if (products > 1) {
+      return "$products products";
+    } else {
+      return "No products";
+    }
+  }
+
   // Bottom Navigation Bar
   static const String home = "Home";
   static const String store = "Store";
@@ -83,4 +93,7 @@ class TextStrings {
 
   // Brands
   static const String nike = "Nike";
+
+  // Store
+  static const String featuredBrands = "Featured Brands";
 }

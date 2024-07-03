@@ -96,4 +96,10 @@ class TextStrings {
 
   // Store
   static const String featuredBrands = "Featured Brands";
+  static const String sports = "Sports";
+  static const String furniture = "Furniture";
+  static const String electronics = "Electronics";
+  static const String clothes = "Clothes";
+  static const String cosmetics = "Cosmetics";
+  static const String youMightLike = "You might like";
 }

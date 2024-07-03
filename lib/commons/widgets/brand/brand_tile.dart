@@ -11,6 +11,7 @@ class BrandTile extends StatelessWidget {
   final VoidCallback? onPressed;
   final String title, image;
   final int totalProducts;
+  final bool showBorder;
 
   const BrandTile({
     super.key,
@@ -18,6 +19,7 @@ class BrandTile extends StatelessWidget {
     required this.title,
     required this.image,
     required this.totalProducts,
+    this.showBorder = true,
   });
 
   @override
@@ -27,7 +29,7 @@ class BrandTile extends StatelessWidget {
       child: CircularContainer(
         isCircular: false,
         padding: const EdgeInsets.all(AppSizes.sm),
-        showBorder: true,
+        showBorder: showBorder,
         backgroundColor: Colors.transparent,
         radius: AppSizes.borderRadiusLg,
         width: null,
@@ -45,10 +47,7 @@ class BrandTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  BrandWithVerifiedIcon(
-                    title: title,
-                    brandTextSize: TextSizes.large,
-                  ),
+                  BrandWithVerifiedIcon(title: title, brandTextSize: TextSizes.large),
                   BrandTotalProducts(totalProducts: totalProducts),
                 ],
               ),

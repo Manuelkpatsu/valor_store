@@ -102,4 +102,32 @@ class TextStrings {
   static const String clothes = "Clothes";
   static const String cosmetics = "Cosmetics";
   static const String youMightLike = "You might like";
+
+  // Personalization
+  static const String account = "Account";
+  static const String accountSettings = "Account Settings";
+  static const String appSettings = "App Settings";
+  static const String myAddresses = "My Addresses";
+  static const String myAddressesSubTitle = "Set shopping delivery address";
+  static const String myCart = "My Cart";
+  static const String myCartSubTitle = "Add, remove products, and move to checkout";
+  static const String myOrders = "My Orders";
+  static const String myOrdersSubTitle = "In-progress and completed orders";
+  static const String myBankAccount = "Bank Account";
+  static const String myBankAccountSubTitle = "Withdraw balance to registered bank account";
+  static const String myCoupons = "My Coupons";
+  static const String myCouponsSubTitle = "List of all the discounted coupons";
+  static const String notifications = "Notifications";
+  static const String notificationsSubTitle = "Set any kind of notification message";
+  static const String accountPrivacy = "Account Privacy";
+  static const String accountPrivacySubTitle = "Manage data usage and connected accounts";
+  static const String loadData = "Load Data";
+  static const String loadDataSubTitle = "Load data to your Cloud Firebase";
+  static const String geolocation = "Geolocation";
+  static const String geolocationSubTitle = "Set recommendation based on location";
+  static const String safeMode = "Safe Mode";
+  static const String safeModeSubTitle = "Search result is safer for all ages";
+  static const String hdImageQuality = "HD Image Quality";
+  static const String hdImageQualitySubTitle = "Set image quality to be seen";
+  static const String logout = "Logout";
 }

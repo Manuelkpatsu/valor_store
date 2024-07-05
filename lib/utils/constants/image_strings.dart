@@ -43,4 +43,7 @@ class ImageStrings {
 
   // Products
   static const String productImage1 = "assets/images/products/nike-shoes.png";
+
+  // Personalization
+  static const String user = "assets/images/user/user.png";
 }

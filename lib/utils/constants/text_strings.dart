@@ -60,10 +60,11 @@ class TextStrings {
   static const String forgotPasswordSubTitle =
       "Don't worry sometimes people can forget too. Enter your email and we will send you a password reset link.";
   static const String myEmailAddress = "emmaahuno@gmail.com";
+  static const String myUsername = "dee_manuel_bongo";
 
   // Home
   static const String homeAppBarTitle = "Good day for shopping";
-  static const String homeAppBarSubTitle = "Manuel Ahuno";
+  static const String myFullName = "Manuel Ahuno";
   static const String searchInStore = "Search in store";
   static const String popularCategories = "Popular Categories";
   static const String popularProducts = "Popular Products";
@@ -130,4 +131,16 @@ class TextStrings {
   static const String hdImageQuality = "HD Image Quality";
   static const String hdImageQualitySubTitle = "Set image quality to be seen";
   static const String logout = "Logout";
+  static const String changeProfilePicture = "Change Profile Picture";
+  static const String profileInformation = "Profile Information";
+  static const String personalInformation = "Personal Information";
+  static const String name = "Name";
+  static const String userId = "User ID";
+  static const String myUserId = "45689";
+  static const String gender = "Gender";
+  static const String myGender = "Male";
+  static const String dateOfBirth = "Date of Birth";
+  static const String myDateOfBirth = "10 Oct, 1994";
+  static const String myPhoneNumber = "+923329121290";
+  static const String closeAccount = "Close Account";
 }

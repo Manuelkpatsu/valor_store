@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:valor_store/commons/widgets/custom_app_bar.dart';
 import 'package:valor_store/commons/widgets/primary_header_container.dart';
 import 'package:valor_store/commons/widgets/section_heading.dart';
+import 'package:valor_store/features/personalization/screens/profile/profile_screen.dart';
 import 'package:valor_store/utils/constants/colors.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
 import 'package:valor_store/utils/constants/sizes.dart';
@@ -39,7 +41,9 @@ class SettingsScreen extends StatelessWidget {
                     leading: const ProfilePhoto(photo: ImageStrings.user),
                     title: const ProfileNameText(name: TextStrings.username),
                     subtitle: const ProfileEmailText(email: TextStrings.myEmailAddress),
-                    trailing: EditProfileButton(onPressed: () {}),
+                    trailing: EditProfileButton(
+                      onPressed: () => Get.to(() => const ProfileScreen()),
+                    ),
                   ),
                   const SizedBox(height: AppSizes.spaceBtwSections),
                 ],

@@ -8,7 +8,7 @@ class HomeSubTitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      TextStrings.homeAppBarSubTitle,
+      TextStrings.myFullName,
       style: Theme.of(context).textTheme.headlineSmall!.apply(color: AppColors.white),
     );
   }

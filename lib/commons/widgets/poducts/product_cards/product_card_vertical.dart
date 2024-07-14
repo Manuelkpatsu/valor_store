@@ -17,14 +17,16 @@ import 'widget/product_discount.dart';
 import 'widget/product_price_text.dart';
 
 class ProductCardVertical extends StatelessWidget {
-  const ProductCardVertical({super.key});
+  final VoidCallback? onPressed;
+
+  const ProductCardVertical({super.key, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     final dark = HelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: onPressed,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.all(1),

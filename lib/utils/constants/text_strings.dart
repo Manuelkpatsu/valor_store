@@ -143,4 +143,22 @@ class TextStrings {
   static const String myDateOfBirth = "10 Oct, 1994";
   static const String myPhoneNumber = "+923329121290";
   static const String closeAccount = "Close Account";
+
+  // Product Details
+  static const String stock = "Stock : ";
+  static const String status = "Status : ";
+  static const String inStock = "In Stock";
+  static const String variation = "Variation";
+  static const String price = "Price : ";
+  static const String variationDescription =
+      "This is the product description and it can go up to max 4 lines";
+  static const String productDescription =
+      "This is a product description for Blue Nike Sleeveless vest. There are more things that can be added but i am just practicing and nothing else.";
+  static const String colors = "Colors";
+  static const String size = "Size";
+  static const String checkout = "Checkout";
+  static const String description = "Description";
+  static const String showMore = "Show more";
+  static const String less = "Less";
+  static const String addToBag = "Add to bag";
 }

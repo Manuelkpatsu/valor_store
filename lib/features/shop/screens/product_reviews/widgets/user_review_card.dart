@@ -63,7 +63,7 @@ class UserReviewCard extends StatelessWidget {
           width: null,
           height: null,
           backgroundColor: isDark ? AppColors.darkerGrey : AppColors.grey,
-          radius: AppSizes.borderRadiusMd,
+          radius: AppSizes.cardRadiusLg,
           padding: const EdgeInsets.all(AppSizes.md),
           child: Column(
             children: [

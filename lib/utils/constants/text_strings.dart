@@ -169,4 +169,7 @@ class TextStrings {
   static const String review =
       "The user interface of the app is quite intuitive. I was able to navigate and make purchases seamlessly. Great job!";
   static const String storeName = "Valor Store";
+
+  // Address
+  static const String addresses = "Addresses";
 }

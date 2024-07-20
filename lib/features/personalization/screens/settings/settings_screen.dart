@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import 'package:valor_store/commons/widgets/custom_app_bar.dart';
 import 'package:valor_store/commons/widgets/primary_header_container.dart';
 import 'package:valor_store/commons/widgets/section_heading.dart';
+import 'package:valor_store/features/personalization/screens/address/address_screen.dart';
 import 'package:valor_store/features/personalization/screens/profile/profile_screen.dart';
 import 'package:valor_store/utils/constants/colors.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
@@ -59,7 +60,7 @@ class SettingsScreen extends StatelessWidget {
               iconData: Iconsax.safe_home,
               title: TextStrings.myAddresses,
               subTitle: TextStrings.myAddressesSubTitle,
-              onPressed: () {},
+              onPressed: () => Get.to(() => const AddressScreen()),
               trailing: const Icon(Iconsax.arrow_right_3, color: AppColors.primary, size: 18),
             ),
             SettingsMenuTile(

@@ -172,4 +172,11 @@ class TextStrings {
 
   // Address
   static const String addresses = "Addresses";
+  static const String addNewAddress = "Add New Address";
+  static const String street = "Street";
+  static const String postalCode = "Postal Code";
+  static const String city = "City";
+  static const String state = "State";
+  static const String country = "Country";
+  static const String save = "Save";
 }

@@ -158,7 +158,15 @@ class TextStrings {
   static const String size = "Size";
   static const String checkout = "Checkout";
   static const String description = "Description";
-  static const String showMore = "Show more";
-  static const String less = "Less";
+  static const String showMore = " show more";
+  static const String showLess = " show less";
   static const String addToBag = "Add to bag";
+
+  // Product reviews
+  static const String reviewsAndRatings = "Reviews & Ratings";
+  static const String reviewsTitle =
+      "Ratings and reviews are verified and are from people who use the same type of device that you use.";
+  static const String review =
+      "The user interface of the app is quite intuitive. I was able to navigate and make purchases seamlessly. Great job!";
+  static const String storeName = "Valor Store";
 }

@@ -20,6 +20,7 @@ dependencies:
   carousel_slider: ^4.2.1
   collection: ^1.18.0
   readmore: ^3.0.0
+  flutter_rating_bar: ^4.0.1
   cupertino_icons: ^1.0.6
 
 dev_dependencies:
@@ -40,6 +41,7 @@ flutter:
     - assets/images/banners/
     - assets/images/products/
     - assets/images/user/
+    - assets/images/reviews/
 
   fonts:
     - family: Poppins

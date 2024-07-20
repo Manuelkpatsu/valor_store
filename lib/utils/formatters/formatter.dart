@@ -3,9 +3,10 @@ import 'package:intl/intl.dart';
 class AppFormatter {
   AppFormatter._();
 
-  static String formatDate(DateTime? date) {
+  static String formatDate(DateTime? date, String? format) {
     date ??= DateTime.now();
-    return DateFormat('dd-MMM-yyyy').format(date);
+    format ??= 'dd-MMM-yyyy';
+    return DateFormat(format).format(date);
   }
 
   static String formatCurrency(double amount) {

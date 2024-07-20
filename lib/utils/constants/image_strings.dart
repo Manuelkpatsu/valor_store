@@ -46,4 +46,9 @@ class ImageStrings {
 
   // Personalization
   static const String user = "assets/images/user/user.png";
+
+  // Product Reviews
+  static const String userProfileImage1 = "assets/images/reviews/review_profile_image_1.png";
+  static const String userProfileImage2 = "assets/images/reviews/review_profile_image_2.png";
+  static const String userProfileImage3 = "assets/images/reviews/review_profile_image_3.png";
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 import 'package:valor_store/commons/widgets/brand_with_verified_icon.dart';
@@ -12,6 +13,7 @@ import 'package:valor_store/commons/widgets/poducts/product_cards/widget/product
 import 'package:valor_store/commons/widgets/poducts/product_cards/widget/product_price_text.dart';
 import 'package:valor_store/commons/widgets/poducts/product_cards/widget/product_title_text.dart';
 import 'package:valor_store/commons/widgets/section_heading.dart';
+import 'package:valor_store/features/shop/screens/product_reviews/product_reviews_screen.dart';
 import 'package:valor_store/utils/constants/colors.dart';
 import 'package:valor_store/utils/constants/enums.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
@@ -178,7 +180,7 @@ class ProductDetailsScreen extends StatelessWidget {
                     trimLines: 2,
                     trimMode: TrimMode.Line,
                     trimCollapsedText: TextStrings.showMore,
-                    trimExpandedText: TextStrings.less,
+                    trimExpandedText: TextStrings.showLess,
                     moreStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                     lessStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.w800),
                   ),
@@ -187,7 +189,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   const SizedBox(height: AppSizes.spaceBtwItems),
                   ListTile(
                     contentPadding: EdgeInsets.zero,
-                    onTap: () {},
+                    onTap: () => Get.to(() => const ProductReviewsScreen()),
                     title: const SectionHeading(title: 'Reviews(199)', showActionButton: false),
                     trailing: const Icon(Iconsax.arrow_right_3, size: 18),
                   ),

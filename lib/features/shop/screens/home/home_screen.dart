@@ -8,6 +8,7 @@ import 'package:valor_store/commons/widgets/primary_header_container.dart';
 import 'package:valor_store/commons/widgets/search_container.dart';
 import 'package:valor_store/commons/widgets/section_heading.dart';
 import 'package:valor_store/commons/widgets/vertical_image_text.dart';
+import 'package:valor_store/features/shop/screens/cart/cart_screen.dart';
 import 'package:valor_store/features/shop/screens/product_details/product_details_screen.dart';
 import 'package:valor_store/utils/constants/colors.dart';
 import 'package:valor_store/utils/constants/image_strings.dart';
@@ -36,7 +37,11 @@ class HomeScreen extends StatelessWidget {
                       children: [HomeTitleText(), HomeSubTitleText()],
                     ),
                     actions: [
-                      CartCounterButton(onPressed: () {}, bagItems: 2, iconColor: AppColors.white),
+                      CartCounterButton(
+                        onPressed: () => Get.to(() => const CartScreen()),
+                        bagItems: 2,
+                        iconColor: AppColors.white,
+                      ),
                     ],
                   ),
                   const SizedBox(height: AppSizes.spaceBtwSections),

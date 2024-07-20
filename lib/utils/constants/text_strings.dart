@@ -179,4 +179,7 @@ class TextStrings {
   static const String state = "State";
   static const String country = "Country";
   static const String save = "Save";
+
+  // Cart
+  static const String cart = "Cart";
 }
